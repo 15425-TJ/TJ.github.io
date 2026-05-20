@@ -1,14 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Summit Sky Visuals</title>
-  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<script src="script.js"></script>
-<body>
+<body class="bg-black text-white font-sans">
 
-<h1>Hello, welcome to my domain</h1>
-<p>This is my first drone website featuring professional photos</p>
+  <!-- Hero Section -->
+  <section class="relative h-screen bg-cover bg-center flex items-center justify-center"
+    style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop');">
+
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <div class="relative z-10 text-center px-6 max-w-4xl">
+      <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight">
+        Summit Sky Visuals
+      </h1>
+
+      <p class="mt-6 text-xl md:text-2xl text-gray-200 leading-relaxed">
+        Professional photography and drone media for businesses, weddings, senior photos, tours, and events.
+      </p>
+
+      <div class="mt-10 flex flex-wrap justify-center gap-4">
+        <a href="#contact"
+          class="bg-white text-black px-8 py-4 rounded-2xl text-lg font-semibold hover:scale-105 transition inline-block">
+          Book a Session
+        </a>
+
+        <a href="#gallery"
+          class="border border-white px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-white hover:text-black transition inline-block">
+          View Portfolio
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="py-24 px-6 bg-zinc-950">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-5xl font-bold">Services</h2>
+        <p class="mt-4 text-gray-400 text-lg">
+          High-quality visuals built to stand out.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div class="overflow-hidden rounded-3xl bg-zinc-900 shadow-2xl">
+          <img class="h-72 w-full object-cover"
+            src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1974&auto=format&fit=crop">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold">Real Estate & Tours</h3>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-3xl bg-zinc-900 shadow-2xl">
+          <img class="h-72 w-full object-cover"
+            src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1974&auto=format&fit=crop">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold">Weddings</h3>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-3xl bg-zinc-900 shadow-2xl">
+          <img class="h-72 w-full object-cover"
+            src="https://images.unsplash.com/photo-1521119989659-a83eee488004?q=80&w=1974&auto=format&fit=crop">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold">Senior Photos</h3>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-3xl bg-zinc-900 shadow-2xl">
+          <img class="h-72 w-full object-cover"
+            src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=1974&auto=format&fit=crop">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold">Drone Photography</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="py-24 px-6 bg-black">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-5xl font-bold leading-tight">
+          Visuals that actually make an impact.
+        </h2>
+
+        <p class="mt-6 text-lg text-gray-300 leading-relaxed">
+          Summit Sky Visuals creates professional photo and video content designed for businesses, events, and personal milestones.
+        </p>
+      </div>
+
+      <div class="rounded-3xl overflow-hidden shadow-2xl">
+        <img class="w-full h-full object-cover"
+          src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1964&auto=format&fit=crop">
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-24 px-6 bg-zinc-950">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-5xl font-bold">Featured Work</h2>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img class="rounded-3xl h-72 w-full object-cover"
+          src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1974&auto=format&fit=crop">
+
+        <img class="rounded-3xl h-72 w-full object-cover"
+          src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1974&auto=format&fit=crop">
+
+        <img class="rounded-3xl h-72 w-full object-cover"
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1974&auto=format&fit=crop">
+
+        <img class="rounded-3xl h-72 w-full object-cover"
+          src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1974&auto=format&fit=crop">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 px-6 bg-black">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-5xl font-bold">Let’s Work Together</h2>
+
+      <p class="mt-6 text-xl text-gray-300">
+        Ready to book a shoot or ask questions? Reach out and let’s create something professional.
+      </p>
+
+      <div class="mt-10 grid md:grid-cols-3 gap-6 text-lg">
+        <div class="bg-zinc-900 rounded-2xl p-6">
+          <p class="text-gray-400">Email</p>
+          <p class="mt-2 font-semibold">hello@summitskyvisuals.com</p>
+        </div>
+
+        <div class="bg-zinc-900 rounded-2xl p-6">
+          <p class="text-gray-400">Instagram</p>
+          <p class="mt-2 font-semibold">@summitskyvisuals</p>
+        </div>
+
+        <div class="bg-zinc-900 rounded-2xl p-6">
+          <p class="text-gray-400">Location</p>
+          <p class="mt-2 font-semibold">Minnesota, USA</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-zinc-800 py-8 text-center text-gray-500 bg-black">
+    © 2026 Summit Sky Visuals. All rights reserved.
+  </footer>
 
 </body>
 </html>
