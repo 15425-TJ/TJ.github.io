@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Book a Session | Summit Sky Visuals</title>
+  <title>Request a Qoute | Summit Sky Visuals</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -16,7 +16,7 @@
       </div>
   <!-- Header -->
   <div class="text-center py-16 px-6">
-    <h1 class="text-6xl font-extrabold">Book a Session</h1>
+    <h1 class="text-6xl font-extrabold">Request a Qoute</h1>
     <p class="mt-6 text-xl text-gray-300">
       Fill out the form below and we’ll get back to you within 24–48 hours.
     </p>
@@ -26,8 +26,6 @@
   <section class="px-6 pb-24">
     <form action="https://formspree.io/f/xpqnpldk" method="POST"
       class="grid gap-6 max-w-3xl mx-auto text-left">
-
-      <input type="hidden" name="_redirect" value="https://15425-tj.github.io/TJ.github.io/thank-you.html">
 
       <input name="name" type="text" placeholder="Full Name" required
         class="w-full p-4 rounded-2xl bg-zinc-900 border border-zinc-800" />
@@ -74,6 +72,14 @@
 
     </form>
   </section>
-
+  <script>
+    const form = document.querySelector("form");
+  
+    form.addEventListener("submit", () => {
+      setTimeout(() => {
+        window.location.href = "thank-you.html";
+      }, 500);
+    });
+  </script>
 </body>
 </html>
